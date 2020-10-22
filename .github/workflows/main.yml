@@ -21,7 +21,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run an autoupdate
-        run: "& autoupdate.ps1"
+        run: .\autoupdate.ps1
+        shell: powershell
 
       - name: Commit files
         run: |
