@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/git-for-windows/git/releases/download/v2.29.2.windows.2/PortableGit-2.29.2.2-64-bit.7z.exe#/dl.7z",
-            "hash": "035BD5E46F1EE797B012801B3EA6C07327CE29720062423D057D4C2D41B92355"
+            "hash": "035bd5e46f1ee797b012801b3ea6c07327ce29720062423d057d4c2d41b92355"
         },
         "32bit": {
             "url": "https://github.com/git-for-windows/git/releases/download/v2.29.2.windows.2/PortableGit-2.29.2.2-32-bit.7z.exe#/dl.7z",
-            "hash": "7479D7DE99175E6FC5277FDA14AF240089BBD96FD60603E517DFB960213A679D"
+            "hash": "7479d7de99175e6fc5277fda14af240089bbd96fd60603e517dfb960213a679d"
         }
     },
     "post_install": "git config --global credential.helper manager",
