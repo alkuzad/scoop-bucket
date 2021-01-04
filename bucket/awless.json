@@ -1,16 +1,16 @@
 {
-    "version": "0.1.10",
+    "version": "0.1.11",
     "description": "awless is a powerful, innovative and small surface command line interface (CLI) to manage Amazon Web Services.",
     "homepage": "https://github.com/wallix/awless",
     "license": "Apache License 2.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/wallix/awless/releases/download/v0.1.11/awless-windows-amd64.zip",
-            "hash": "0215A3E56D5A36603AD4EF6DB115B11FE4DD2715F8A6C4EB7328934C07EF2953"
+            "hash": "0215a3e56d5a36603ad4ef6db115b11fe4dd2715f8a6c4eb7328934c07ef2953"
         },
         "32bit": {
             "url": "https://github.com/wallix/awless/releases/download/v0.1.11/awless-windows-386.zip",
-            "hash": "9C64906D9E8ADED46C3AE29A5D6D321F8848CDAE12D714C37C09764AA3A00EE2"
+            "hash": "9c64906d9e8aded46c3ae29a5d6d321f8848cdae12d714c37c09764aa3a00ee2"
         }
     },
     "bin": "awless.exe",
