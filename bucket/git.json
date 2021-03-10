@@ -37,6 +37,6 @@
     },
     "checkver": {
         "github": "https://github.com/git-for-windows/git",
-        "regex": "tag/v([\\w.]+)\""
+        "regex": "tag/v([\\w.]+)(windows.\\d+)?\""
     }
 }
