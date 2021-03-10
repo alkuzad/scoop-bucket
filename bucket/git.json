@@ -37,6 +37,24 @@
     },
     "checkver": {
         "github": "https://github.com/git-for-windows/git",
-        "regex": "tag/v([\\w.]+)(windows.\\d+)?\""
+        "regex": "tag/v([\\w.]+)(.windows.\\d+)?\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/git-for-windows/git/releases/download/v$matchHead$matchTail/PortableGit-$matchHead-64-bit.7z.exe#/dl.7z",
+                "hash": {
+                    "url": "https://github.com/git-for-windows/git/releases/tag/v$matchHead$matchTail",
+                    "regex": "$basename</td>[\\S\\s]+?<td>$sha256"
+                }
+            },
+            "32bit": {
+                "url": "https://github.com/git-for-windows/git/releases/download/v$matchHead$matchTail/PortableGit-$matchHead-32-bit.7z.exe#/dl.7z",
+                "hash": {
+                    "url": "https://github.com/git-for-windows/git/releases/tag/v$matchHead$matchTail",
+                    "regex": "$basename</td>[\\S\\s]+?<td>$sha256"
+                }
+            }
+        }
     }
 }
