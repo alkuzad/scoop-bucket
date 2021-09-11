@@ -1,0 +1,28 @@
+{
+    "version": "2.39",
+    "description": "A free, powerful, multi-purpose tool that helps you monitor system resources, debug software and detect malware. ",
+    "homepage": "https://github.com/processhacker/processhacker",
+    "license": "GNU GPL version 3",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/processhacker/processhacker/releases/download/v2.39/processhacker-2.39-bin.zip",
+            "hash": "2AFB5303E191DDE688C5626C3EE545E32E52F09DA3B35B20F5E0D29A418432F5"
+        }
+    },
+    "bin": "ProcessHacker.exe",
+    "shortcuts": [
+        [
+            "ProcessHacker.exe",
+            "Process Hacker"
+        ]
+    ],
+    "extract_dir": "x64",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/processhacker/processhacker/releases/download/v$version/processhacker-$version-bin.zip"
+            }
+        }
+    }
+}
