@@ -1,0 +1,19 @@
+{
+    "version": "9.16.26",
+    "homepage": "https://www.isc.org/bind/",
+    "description": "dig (domain information groper) is a flexible tool for interrogating DNS name servers",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://ftp.isc.org/isc/bind9/9.16.26/BIND9.16.26.x64.zip",
+            "hash": "2B28768B32CD4ABE81CC83F1DF041ABA8D3D6531FC5FB1D85E31D1346029BF27"
+        },
+    },
+    "bin": "dig.exe",
+    "suggest": {
+        "vcredist": "extras/vcredist2012"
+    },
+    "notes": [
+        "Last stable windows version of Bind9 provided for Windows"
+    ]
+}
