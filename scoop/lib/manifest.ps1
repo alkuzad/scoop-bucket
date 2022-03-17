@@ -1,5 +1,5 @@
-. "$psscriptroot/core.ps1"
-. "$psscriptroot/autoupdate.ps1"
+. "$PSScriptRoot\core.ps1"
+. "$PSScriptRoot\autoupdate.ps1"
 
 function manifest_path($app, $bucket) {
     fullpath "$(Find-BucketDirectory $bucket)\$(sanitary_path $app).json"
@@ -59,8 +59,20 @@ function install_info($app, $version, $global) {
 }
 
 function default_architecture {
-    if ([Environment]::Is64BitOperatingSystem) { return "64bit" }
-    "32bit"
+    $arch = get_config 'default_architecture'
+    $system = if ([Environment]::Is64BitOperatingSystem) { '64bit' } else { '32bit' }
+    if ($null -eq $arch) {
+        $arch = $system
+    } else {
+        try {
+            $arch = ensure_architecture $arch
+        } catch {
+            warn 'Invalid default architecture configured. Determining default system architecture'
+            $arch = $system
+        }
+    }
+
+    return $arch
 }
 
 function arch_specific($prop, $manifest, $architecture) {
@@ -90,7 +102,7 @@ function generate_user_manifest($app, $bucket, $version) {
 
     ensure $(usermanifestsdir) | out-null
     try {
-        autoupdate $app "$(resolve-path $(usermanifestsdir))" $manifest $version $(@{})
+        Invoke-AutoUpdate $app "$(resolve-path $(usermanifestsdir))" $manifest $version $(@{ })
         return "$(resolve-path $(usermanifest $app))"
     } catch {
         write-host -f darkred "Could not install $app@$version"
