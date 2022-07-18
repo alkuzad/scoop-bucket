@@ -7,7 +7,7 @@
         "64bit": {
             "url": "https://dl.influxdata.com/influxdb/releases/influxdb2-client-2.3.0-windows-amd64.zip",
             "hash": "a2ccaac55725f5d1ebc46399845df56d9f4584e553fcb5485ef829200b8b7a17",
-            "extract_dir": "influxdb2-2.3.0-windows-amd64"
+            "extract_dir": "influxdb2-client-2.3.0-windows-amd64"
         }
     },
     "bin": "influx.exe",
