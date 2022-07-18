@@ -14,8 +14,7 @@
         "influx.exe"
     ],
     "checkver": {
-      "url": "https://docs.influxdata.com/influxdb/cloud/tools/influx-cli/?t=Windows",
-      "regex": "influxdb2-client-([\\d.]+)-windows-amd64.zip"
+      "github": "https://github.com/influxdata/influx-cli"
     },
     "autoupdate": {
         "architecture": {
