@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dl.influxdata.com/influxdb/releases/influxdb2-client-2.3.0-windows-amd64.zip",
-            "hash": "c8edf601922cc2f7134cdfbf36f0b95bfedf385c17a166d164e7bb212ba1e4a9",
+            "hash": "a2ccaac55725f5d1ebc46399845df56d9f4584e553fcb5485ef829200b8b7a17",
             "extract_dir": "influxdb2-2.3.0-windows-amd64"
         }
     },
