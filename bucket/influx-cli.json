@@ -1,20 +1,18 @@
 {
-    "version": "2.2.0",
+    "version": "2.3.0",
     "description": "CLI for managing resources in InfluxDB v2",
     "homepage": "https://www.influxdata.com/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://dl.influxdata.com/influxdb/releases/influxdb2-client-2.2.0-windows-amd64.zip",
-            "hash": "ffb1792787a1829bdcfa1c1836b11c6f0437ac1fb835c3cfc0306b79e579dd6e",
-            "extract_dir": "influxdb2-client-2.2.0-windows-amd64"
+            "url": "https://dl.influxdata.com/influxdb/releases/influxdb2-2.3.0-windows-amd64.zip",
+            "hash": "c8edf601922cc2f7134cdfbf36f0b95bfedf385c17a166d164e7bb212ba1e4a9",
+            "extract_dir": "influxdb2-2.3.0-windows-amd64"
         }
     },
-    "bin": [
-        "influx.exe"
-    ],
+    "bin": "influx.exe",
     "checkver": {
-      "github": "https://github.com/influxdata/influx-cli"
+        "github": "https://github.com/influxdata/influx-cli"
     },
     "autoupdate": {
         "architecture": {
