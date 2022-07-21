@@ -13,22 +13,36 @@
             "hash": "sha512:4327b06a0eb3cf00a20f8646cd72e1004c6ee065a087d3bd871c443dfcd33aec951eb0e321d6a8ba05b672a375e2283b2c78ede7ed079afa84ac72c628378922"
         }
     },
+    "notes": [
+        "To set profile 'Scoop' as *DEFAULT*, or profiles/settings was lost after update:",
+        "  - Run 'Thunderbird Profile Manager', choose 'Scoop' then click 'Start Thunderbird'.",
+        "  - Visit 'about:profiles' page in Thunderbird to check *DEFAULT* profile.",
+        "For details: https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-thunderbird-profiles"
+    ],
     "extract_dir": "core",
-    "bin": [
+    "post_install": [
+        "thunderbird -CreateProfile \"Scoop $persist_dir\\profile\"",
+        "$Addition = \"$persist_dir\\addition\"",
+        "if (Test-Path $Addition) {",
+        "  info 'Copying additional items...'",
+        "  Copy-Item -Path $Addition\\* -Destination $dir -Force -Recurse -ErrorAction SilentlyContinue",
+        "}"
+    ],
+   "shortcuts": [
         [
             "thunderbird.exe",
-            "thunderbird",
-            "-profile \"$dir\\profile\""
-        ]
-    ],
-    "shortcuts": [
+            "Thunderbird"
+        ],
         [
             "thunderbird.exe",
-            "Mozilla Thunderbird",
-            "-profile \"$dir\\profile\""
+            "Thunderbird Profile Manager",
+            "-P"
         ]
     ],
-    "persist": "profile",
+    "persist": [
+        "distribution",
+        "profile"
+    ],
     "checkver": {
         "url": "https://www.thunderbird.net/thunderbird/all/",
         "regex": "thunderbird-([\\d.]+)-SSL.*lang=pl"
