@@ -7,7 +7,7 @@
         "64bit": {
             "url": "https://dl.influxdata.com/influxdb/releases/influxdb2-client-2.4.0-windows-amd64.zip",
             "hash": "f5575b2bc18641568868e699f2fa8efcf6070d34f8dd68d84709a228e8c0d581",
-            "extract_dir": "influxdb2-2.4.0-windows-amd64"
+            "extract_dir": "influxdb2-client-2.4.0-windows-amd64"
         }
     },
     "bin": "influx.exe",
@@ -18,7 +18,7 @@
         "architecture": {
             "64bit": {
                 "url": "https://dl.influxdata.com/influxdb/releases/influxdb2-client-$version-windows-amd64.zip",
-                "extract_dir": "influxdb2-$version-windows-amd64"
+                "extract_dir": "influxdb2-client-$version-windows-amd64"
             }
         }
     }
