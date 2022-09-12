@@ -3,7 +3,7 @@
 My custom buckets for scoop:
 
 1. Polish version of Thunderbird
-2. Dig in proper version
+2. Dig
 3. Influx-CLI (For Influx >=2.0)
 4. awless
 5. processhacker
