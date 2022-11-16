@@ -7,7 +7,7 @@
         "64bit": {
             "url": "https://ftp.isc.org/isc/bind9/9.11.36/BIND9.11.36.x64.zip",
             "hash": "99CD89A59812A0C30E1B944D71E5870B8A0EFF71044E4936861BB35F43068345"
-        },
+        }
     },
     "bin": "dig.exe",
     "suggest": {
