@@ -11,6 +11,6 @@
     },
     "autoupdate": {
         "url": "https://github.com/Splode/pomotroid/releases/download/v$version/pomotroid-$version-portable.exe"
-    }
+    },
   "shortcuts": [["pomotroid-0.13.0-portable.exe", "Pomotroid"]]
 }
