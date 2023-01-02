@@ -21,7 +21,7 @@
     ],
     "extract_dir": "core",
     "post_install": [
-        "thunderbird -CreateProfile \"Scoop $persist_dir\\profile\"",
+        "~\\scoop\\apps\\thunderbird-polish\\current\\thunderbird.exe -CreateProfile \"Scoop $persist_dir\\profile\"",
         "$Addition = \"$persist_dir\\addition\"",
         "if (Test-Path $Addition) {",
         "  info 'Copying additional items...'",
