@@ -14,11 +14,5 @@
             "container-diff-windows-amd64.exe",
             "container-diff"
         ]
-    ],
-    "checkver": {
-        "github": "https://github.com/GoogleContainerTools/container-diff"
-    },
-    "autoupdate": {
-        "url": "https://github.com/GoogleContainerTools/container-diff/releases/download/v$version/container-diff-windows-amd64.exe"
-    }
+    ]
 }
