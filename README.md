@@ -10,3 +10,4 @@ My custom buckets for scoop:
 6. container-diff
 
 Manifests are auto-updated daily, except dig, which I want to keep in this stable version that correctly returns values for me.
+
